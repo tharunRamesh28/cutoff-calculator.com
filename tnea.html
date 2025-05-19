@@ -1,0 +1,69 @@
+<head>
+    <title>CUTOFF CALCULATOR</title>
+</head>
+<body>
+    <center>
+    <h1>CUTOFF CALCULATOR</h1>
+    <p> Enter your physics,chemistry,maths mark to find your cutoff mark</p><hr>
+    <h3>Physics mark:<input placeholder="enter your physics mark" id="physics">
+        <h3>chemistry mark:<input placeholder="enter your chemistry mark" id="chemistry">
+            <h3>Maths mark:<input placeholder="enter your maths mark" id="maths"><br>
+                <button onclick="cutoff()">calculate cutoff</button>
+                <script>
+                    
+                    function cutoff()
+                    {
+                        var physicsmark=parseFloat(document.getElementById("physics").value)
+                    var chemistrymark=parseFloat(document.getElementById("chemistry").value)
+                    var mathsmark=parseFloat(document.getElementById("maths").value)
+                        let cutoff=(physicsmark/2)+(chemistrymark/2)+mathsmark;
+                        console.log("cutoff:",cutoff);
+                        alert("Congrats your cutoff is:"+cutoff)
+
+
+                    
+                    }
+                </script>
+                <style>
+                    body{
+                        background: linear-gradient(135deg,#e0f7fa,#80deea);
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    
+    }
+
+    h1 {
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 80%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #00796b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #03584a;
+    }
+                </style>
+
+</body>
